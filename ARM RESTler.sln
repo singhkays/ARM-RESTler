@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARM RESTler", "ARMRESTler\ARM RESTler.csproj", "{B95B8CDA-AFD7-442C-B09E-D4C97796190B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{C9D8A0A6-1837-46A5-A5FC-7D513B218393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95B8CDA-AFD7-442C-B09E-D4C97796190B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95B8CDA-AFD7-442C-B09E-D4C97796190B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95B8CDA-AFD7-442C-B09E-D4C97796190B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95B8CDA-AFD7-442C-B09E-D4C97796190B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D8A0A6-1837-46A5-A5FC-7D513B218393}.Debug|Any CPU.ActiveCfg = Debug
+		{C9D8A0A6-1837-46A5-A5FC-7D513B218393}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
