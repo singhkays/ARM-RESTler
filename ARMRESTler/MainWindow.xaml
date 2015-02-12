@@ -133,7 +133,6 @@
                  Height="23"
                  Margin="277,26,0,0"
                  TextWrapping="NoWrap"
-                 Text=""
                  VerticalAlignment="Top"
                  Width="301"
                  Controls:TextBoxHelper.Watermark="e.g. https://login.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/authorize?api-version=1.0"
@@ -145,7 +144,6 @@
                  Height="23"
                  Margin="277,66,0,0"
                  TextWrapping="NoWrap"
-                 Text=""
                  VerticalAlignment="Top"
                  Width="301"
                  Controls:TextBoxHelper.Watermark="e.g. 78cah40d-79q3-4a4d-bca0-4y3cc123a764"
@@ -157,7 +155,6 @@
                  Height="23"
                  Margin="277,107,0,0"
                  TextWrapping="NoWrap"
-                 Text=""
                  VerticalAlignment="Top"
                  Width="301"
                  Controls:TextBoxHelper.Watermark="e.g. http://localhost/appName"
@@ -228,26 +225,14 @@
 
         </Button>
         <Label HorizontalAlignment="Left"
-               Margin="403,289,0,0"
+               Margin="425,290,0,0"
                VerticalAlignment="Top"
-               Width="190"
+               Width="157"
                Foreground="#FFA8A8A8"
                FontFamily="{DynamicResource Label_FontFamily}"
-               FontSize="11">
-            <StackPanel Orientation="Horizontal">
-
-                <TextBlock VerticalAlignment="Center"
-                           Text="made by Kay Singh @ Microsoft" />
-                <Rectangle Width="16"
-                           Height="15"
-                           Fill="#FFA8A8A8"
-                           Margin="7 0 0 0">
-                    <Rectangle.OpacityMask>
-                        <VisualBrush Stretch="Fill"
-                                     Visual="{StaticResource appbar_social_microsoft}" />
-                    </Rectangle.OpacityMask>
-                </Rectangle>
-            </StackPanel>
+               FontSize="11"
+               Content="made by Kay Singh @ Microsoft">
+    
         </Label>
     </Grid>
 
