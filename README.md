@@ -12,6 +12,9 @@
 
 ##Screenshots
 ![ARM RESTler interface](images/armrestler.png)
+* save button - Use this button to save your input so you don't have to find all the endpoints, ids again
+* load button - Loads the previously saved state
+* connect/tutorial button - Brings you to this repo and guide
 
 ##Instructions
 To get the various input you first need to setup an Active Directory application. Read here on how to do this and get the required input
