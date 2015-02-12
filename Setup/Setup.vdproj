@@ -15,55 +15,55 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_36A4D575C7734C61A6A6CF5DBC3F554E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3D0D8D4A57184A908D2D1409774778C5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5F314C8AD44E8F9557DC7795E1BC2E6A"
+        "MsmKey" = "8:_606428F5686666A72DB5E254760C3FB2"
         "OwnerKey" = "8:_3D0D8D4A57184A908D2D1409774778C5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_63A0B664D6014E55F9EAAAA7AF297CF3"
+        "MsmKey" = "8:_606428F5686666A72DB5E254760C3FB2"
+        "OwnerKey" = "8:_6265E7182BBE98EAB1956E74B5FC9F97"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6265E7182BBE98EAB1956E74B5FC9F97"
         "OwnerKey" = "8:_3D0D8D4A57184A908D2D1409774778C5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_63A0B664D6014E55F9EAAAA7AF297CF3"
-        "OwnerKey" = "8:_5F314C8AD44E8F9557DC7795E1BC2E6A"
+        "MsmKey" = "8:_7D87BF6082B586B2C7854589A722C303"
+        "OwnerKey" = "8:_945FDD9BE49F306F2AAA054CC83E9FAC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_73B05CFC639FA05C56571D7C0EC71922"
-        "OwnerKey" = "8:_C1E55558BC666FE9F948B9AC2738DF06"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_73B05CFC639FA05C56571D7C0EC71922"
+        "MsmKey" = "8:_7D87BF6082B586B2C7854589A722C303"
         "OwnerKey" = "8:_3D0D8D4A57184A908D2D1409774778C5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C1E55558BC666FE9F948B9AC2738DF06"
+        "MsmKey" = "8:_945FDD9BE49F306F2AAA054CC83E9FAC"
         "OwnerKey" = "8:_3D0D8D4A57184A908D2D1409774778C5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E6F99B4D4FE144F588AFD810324FEF26"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EA2D6618B260434B9726C8A29DAF9088"
+        "MsmKey" = "8:_9DE13FB2708B4937B7414B32805BB7E6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -76,25 +76,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5F314C8AD44E8F9557DC7795E1BC2E6A"
+        "OwnerKey" = "8:_6265E7182BBE98EAB1956E74B5FC9F97"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_63A0B664D6014E55F9EAAAA7AF297CF3"
+        "OwnerKey" = "8:_606428F5686666A72DB5E254760C3FB2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1E55558BC666FE9F948B9AC2738DF06"
+        "OwnerKey" = "8:_945FDD9BE49F306F2AAA054CC83E9FAC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_73B05CFC639FA05C56571D7C0EC71922"
+        "OwnerKey" = "8:_7D87BF6082B586B2C7854589A722C303"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -122,6 +122,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -146,6 +154,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -176,21 +192,10 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5F314C8AD44E8F9557DC7795E1BC2E6A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_36A4D575C7734C61A6A6CF5DBC3F554E"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_5F314C8AD44E8F9557DC7795E1BC2E6A"
-                    {
-                    "Name" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\ARMRESTler\\Resources\\ARM RESTler large.ico"
+            "TargetName" = "8:ARM RESTler large.ico"
             "Tag" = "8:"
             "Folder" = "8:_29AED1EEFF4D43B58EA137E75265F28A"
             "Condition" = "8:"
@@ -204,17 +209,17 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63A0B664D6014E55F9EAAAA7AF297CF3"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_606428F5686666A72DB5E254760C3FB2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory, Version=2.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_63A0B664D6014E55F9EAAAA7AF297CF3"
+                    "_606428F5686666A72DB5E254760C3FB2"
                     {
                     "Name" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
                     "Attributes" = "3:512"
@@ -238,14 +243,45 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_73B05CFC639FA05C56571D7C0EC71922"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6265E7182BBE98EAB1956E74B5FC9F97"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6265E7182BBE98EAB1956E74B5FC9F97"
+                    {
+                    "Name" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_29AED1EEFF4D43B58EA137E75265F28A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7D87BF6082B586B2C7854589A722C303"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_73B05CFC639FA05C56571D7C0EC71922"
+                    "_7D87BF6082B586B2C7854589A722C303"
                     {
                     "Name" = "8:System.Windows.Interactivity.dll"
                     "Attributes" = "3:512"
@@ -269,14 +305,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C1E55558BC666FE9F948B9AC2738DF06"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_945FDD9BE49F306F2AAA054CC83E9FAC"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MahApps.Metro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C1E55558BC666FE9F948B9AC2738DF06"
+                    "_945FDD9BE49F306F2AAA054CC83E9FAC"
                     {
                     "Name" = "8:MahApps.Metro.dll"
                     "Attributes" = "3:512"
@@ -300,29 +336,9 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E6F99B4D4FE144F588AFD810324FEF26"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9DE13FB2708B4937B7414B32805BB7E6"
             {
-            "SourcePath" = "8:..\\ARMRESTler\\Resources\\ARM RESTler large.ico"
-            "TargetName" = "8:ARM RESTler large.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_29AED1EEFF4D43B58EA137E75265F28A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA2D6618B260434B9726C8A29DAF9088"
-            {
-            "SourcePath" = "8:..\\ARMRESTler\\ARM RESTler small.ico"
+            "SourcePath" = "8:..\\ARMRESTler\\Resources\\ARM RESTler small.ico"
             "TargetName" = "8:ARM RESTler small.ico"
             "Tag" = "8:"
             "Folder" = "8:_29AED1EEFF4D43B58EA137E75265F28A"
@@ -414,7 +430,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_EA2D6618B260434B9726C8A29DAF9088"
+        "ARPPRODUCTICON" = "8:_9DE13FB2708B4937B7414B32805BB7E6"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -528,7 +544,7 @@
             "Target" = "8:_3D0D8D4A57184A908D2D1409774778C5"
             "Folder" = "8:_EBEA69B3F1514C5A803C3FA99EE750A5"
             "WorkingFolder" = "8:_29AED1EEFF4D43B58EA137E75265F28A"
-            "Icon" = "8:_E6F99B4D4FE144F588AFD810324FEF26"
+            "Icon" = "8:_36A4D575C7734C61A6A6CF5DBC3F554E"
             "Feature" = "8:"
             }
         }
