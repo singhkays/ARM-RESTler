@@ -35,7 +35,7 @@ namespace ARMRESTler
 
         private void Button_Setup_Click (object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx");
+            System.Diagnostics.Process.Start("https://github.com/singhkay/ARM-RESTler");
         }
 
         private async void Button_Save_Click (object sender, RoutedEventArgs e)
