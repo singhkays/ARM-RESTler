@@ -33,11 +33,13 @@ namespace ARMRESTler
             InitializeComponent();
         }
 
+        // When setup button is clicked, go to the documentation page
         private void Button_Setup_Click (object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/singhkay/ARM-RESTler");
         }
 
+        // When save button is clicked, save the users input
         private async void Button_Save_Click (object sender, RoutedEventArgs e)
         {
             defaultSettings.oauthEndpoint = this.TextBox_OAuthEndpoint.Text;
@@ -47,6 +49,7 @@ namespace ARMRESTler
             await this.ShowMessageAsync("Saved!", "Your input was succesfully saved", MessageDialogStyle.Affirmative);
         }
 
+        // When load button is clicked, load the users saved input
         private void Button_Load_Click (object sender, RoutedEventArgs e)
         {
             this.TextBox_OAuthEndpoint.Text = defaultSettings.oauthEndpoint;
@@ -54,6 +57,7 @@ namespace ARMRESTler
             this.TextBox_RedirectUri.Text = defaultSettings.redirectUri;
         }
 
+        // When get token button is clicked, reach out the Active Directory and get the token
         private void Button_GetToken_Click (object sender, RoutedEventArgs e)
         {
             if (!this.getTokenButtonText.Text.Equals(ConfigurationManager.AppSettings["getTokenButtonText"]))
@@ -80,7 +84,7 @@ namespace ARMRESTler
                 this.TextBox_BearerToken.Text = "Bearer " + token;
         }
 
-        // TODO
+        // When the users mouse enters the get token button, reset the state of the button if it was in an error state
         private void Button_GetToken_MouseEnter (object sender, MouseEventArgs e)
         {
             if (!this.getTokenButtonText.Text.Equals(ConfigurationManager.AppSettings["getTokenButtonText"]))
@@ -132,6 +136,7 @@ namespace ARMRESTler
             }            
         }
 
+        // When the copy button is clicked, copy the token to the clipboard and change the state of the button to indicate success
         private void Button_GetToken_Copy_Click (object sender, RoutedEventArgs e)
         {
             Clipboard.SetDataObject(this.TextBox_BearerToken.Text);
