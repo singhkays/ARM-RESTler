@@ -46,7 +46,8 @@
                 </StackPanel>
             </Button>
 
-            <Button x:Name="Button_Setup">
+            <Button x:Name="Button_Setup"
+                    Click="Button_Setup_Click">
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="20"
                                Height="15"
@@ -181,17 +182,19 @@
                 Width="109"
                 Style="{DynamicResource SquareButtonStyle}"
                 Height="38"
-                Click="Button_GetToken_Click">
+                Click="Button_GetToken_Click"
+                MouseEnter="Button_GetToken_MouseEnter">
             <StackPanel Orientation="Horizontal">
                 <Rectangle Width="15"
                            Height="15"
                            Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
                     <Rectangle.OpacityMask>
-                        <VisualBrush Stretch="Fill"
+                        <VisualBrush x:Name="getTokenButtonIcon" Stretch="Fill"
                                      Visual="{StaticResource appbar_connect}" />
                     </Rectangle.OpacityMask>
                 </Rectangle>
-                <TextBlock Margin="5 0 0 0"
+                <TextBlock x:Name="getTokenButtonText"
+                           Margin="5 0 0 0"
                            VerticalAlignment="Center"
                            Text="get token" />
 
@@ -216,7 +219,8 @@
                                      Visual="{StaticResource appbar_clipboard_paste}" />
                     </Rectangle.OpacityMask>
                 </Rectangle>
-                <TextBlock Margin="5 0 0 0"
+                <TextBlock x:Name="copyButtonText"
+                           Margin="5 0 0 0"
                            VerticalAlignment="Center"
                            Text="copy token to clipboard" />
 

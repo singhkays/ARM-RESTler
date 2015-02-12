@@ -26,12 +26,11 @@ namespace ARMRESTler
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        Properties.Settings defaultSettings = Properties.Settings.Default;
+        private Properties.Settings defaultSettings = Properties.Settings.Default;
 
         public MainWindow ()
         {
             InitializeComponent();
-            this.Button_Setup.Click += Button_Setup_Click;
         }
 
         private void Button_Setup_Click (object sender, RoutedEventArgs e)
@@ -57,19 +56,44 @@ namespace ARMRESTler
 
         private void Button_GetToken_Click (object sender, RoutedEventArgs e)
         {
+            if (!this.getTokenButtonText.Text.Equals(ConfigurationManager.AppSettings["getTokenButtonText"]))
+            {
+                this.getTokenButtonText.Text = ConfigurationManager.AppSettings["getTokenButtonText"];
+                this.Button_GetToken.Background = Brushes.White;
+                this.TextBox_BearerToken.Text = ConfigurationManager.AppSettings["tokenBoxText"];
+            }            
+
             string token = GetAToken(sender, e, this);
 
             if (token.Equals("regex match error"))
             {
                 this.TextBox_BearerToken.Text = "ERROR! Check your OAuth 2.0 Authorization Endpoint again";
-                this.Button_GetToken.Content = "ERROR!";
+                this.getTokenButtonText.Text = "error!";
+                this.Button_GetToken.Background = Brushes.OrangeRed;
+            }
+            else if (token.Equals("authentication error"))
+            {
+                this.TextBox_BearerToken.Text = "ERROR! Check your credentials";
+                this.getTokenButtonText.Text = "error!";
                 this.Button_GetToken.Background = Brushes.OrangeRed;
             } else
                 this.TextBox_BearerToken.Text = "Bearer " + token;
         }
 
+        // TODO
+        private void Button_GetToken_MouseEnter (object sender, MouseEventArgs e)
+        {
+            if (!this.getTokenButtonText.Text.Equals(ConfigurationManager.AppSettings["getTokenButtonText"]))
+            {
+                this.getTokenButtonText.Text = ConfigurationManager.AppSettings["getTokenButtonText"];
+
+                this.Button_GetToken.Background = Brushes.White;
+                this.TextBox_BearerToken.Text = ConfigurationManager.AppSettings["tokenBoxText"];
+            }
+        }
+
         // Get the Bearer token from AD
-        private static string GetAToken(object sender, RoutedEventArgs e, MainWindow mainWindow)
+        private string GetAToken(object sender, RoutedEventArgs e, MainWindow mainWindow)
         {
             // Get the GUID aka tenantId out of the OAuth endpoint
             string txt = mainWindow.TextBox_OAuthEndpoint.Text;
@@ -88,23 +112,32 @@ namespace ARMRESTler
                 return "regex match error";
             }
 
-            var authenticationContext = new AuthenticationContext("https://login.windows.net/" + tenantId);
-            var result = authenticationContext.AcquireToken("https://management.azure.com/", mainWindow.TextBox_ClientId.Text, new Uri(mainWindow.TextBox_RedirectUri.Text));
+            AuthenticationContext authenticationContext = new AuthenticationContext("https://login.windows.net/" + tenantId);
+            AuthenticationResult result = null;
+
+            try
+            {
+                result = authenticationContext.AcquireToken("https://management.azure.com/", mainWindow.TextBox_ClientId.Text, new Uri(mainWindow.TextBox_RedirectUri.Text));
+            }
+            catch (Exception)
+            {
+            }            
   
             if (result == null) {
-            throw new InvalidOperationException("Failed to obtain the JWT token");
+                return "authentication error";
             }
-
-            string token = result.AccessToken;
-  
-            return token;
+            else
+            {
+                return result.AccessToken;
+            }            
         }
 
         private void Button_GetToken_Copy_Click (object sender, RoutedEventArgs e)
         {
             Clipboard.SetDataObject(this.TextBox_BearerToken.Text);
-            this.Button_GetToken_Copy.Content = "copied!";
+            this.copyButtonText.Text = "copied!";
             this.Button_GetToken_Copy.Background = Brushes.ForestGreen;
         }
+
     }
 }
